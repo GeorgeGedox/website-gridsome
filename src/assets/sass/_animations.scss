@@ -1,0 +1,94 @@
+$animations: (
+  "fadeInLeft",
+  "fadeInRight",
+  "slideInDown",
+  "slideInUp",
+  "fadeIn"
+);
+
+// Animation class build
+@each $name in $animations {
+  .anim-#{$name} {
+    animation-name: $name;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+  }
+}
+
+// Delay class builder
+@for $i from 1 through 15 {
+  .anim-delay-#{$i}00{
+    animation-delay: #{$i}00ms;
+  }
+}
+
+// Keyframes
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+
+  to{
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  0%{
+    transform: translate3d(0, 100%, 0);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

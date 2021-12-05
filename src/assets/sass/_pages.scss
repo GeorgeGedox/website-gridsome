@@ -1,0 +1,153 @@
+.homepage {
+  header {
+    padding: 65px 0;
+
+    @include media-breakpoint-down(sm) {
+      .logo {
+        display: none !important;
+      }
+    }
+
+    .logo > a {
+      display: none !important;
+    }
+  }
+
+  .jumbo-logo {
+    text-align: center;
+    transform: translateY(-80px);
+
+    @include media-breakpoint-down(md) {
+      transform: none;
+      margin-bottom: 35px;
+    }
+  }
+
+  .intro {
+    font-size: 42px;
+  }
+
+  .laptop-special {
+    max-width: 100%;
+    position: relative;
+    padding-top: 35px;
+
+    @include media-breakpoint-down(lg) {
+      padding-top: 30%;
+    }
+
+    .laptop-image {
+      position: absolute;
+      width: 70%;
+      z-index: 1;
+      left: 18%;
+
+      img {
+        animation: float 1s infinite alternate ease-in-out 500ms, fadeInRight 500ms;
+        display: inline-block;
+        max-width: 100%;
+        width: auto;
+      }
+    }
+
+    .laptop-decor {
+      padding-top: 185px;
+
+      @include media-breakpoint-down(lg) {
+        padding-top: 55px;
+      }
+
+      svg {
+        fill: $color-primary;
+        max-width: 100%;
+        width: auto;
+      }
+    }
+  }
+}
+
+.article-view {
+  img {
+    display: inline-block;
+    max-width: 100%;
+    width: auto;
+  }
+
+  @for $i from 1 through 6 {
+    h#{$i} {
+      color: $color-primary;
+      margin-bottom: 15px;
+      padding-top: 30px;
+    }
+  }
+
+  .heading {
+    > span {
+      font-size: 14px;
+    }
+
+    > h1 {
+      padding: 0;
+    }
+  }
+
+  .heading-anchor {
+    transition: 100ms;
+    margin-right: 5px;
+  }
+}
+
+.blog {
+  .pagination {
+    nav {
+      a {
+        @extend .button;
+        padding: 5px 18px;
+        margin-right: 5px;
+        border-radius: 5px;
+
+        &.active {
+          @extend .button, :hover;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .articles {
+    article {
+      &:last-child {
+        .divider {
+          display: none;
+        }
+      }
+
+      .title {
+        margin-bottom: 15px;
+
+        > span {
+          display: block;
+          font-size: 14px;
+          margin-bottom: 5px;
+        }
+      }
+
+      .body {
+        margin-bottom: 25px;
+
+        > p {
+          margin-bottom: 20px;
+        }
+      }
+
+      .divider {
+        width: 100%;
+
+        svg {
+          max-width: 100%;
+          width: auto;
+        }
+      }
+    }
+  }
+}
