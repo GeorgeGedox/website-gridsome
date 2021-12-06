@@ -7,6 +7,7 @@ query {
   metadata {
     siteName
     siteDescription
+    siteUrl
     social {
       twitter
     }
@@ -53,7 +54,7 @@ export default {
         {
           key: 'og:image',
           name: 'og:image',
-          content: `${process.env.GRIDSOME_APP_URL}/images/og_banner.png`
+          content: `${this.$static.metadata.siteUrl}/images/og_banner.png`
         },
       ]
     }

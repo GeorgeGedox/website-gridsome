@@ -38,7 +38,7 @@ module.exports = {
       options: {
         cacheTime: 600000,
         config: {
-          '/*': {
+          '/blog/*': {
             changefreq: 'weekly',
             priority: 0.5
           }

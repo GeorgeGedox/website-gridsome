@@ -2,7 +2,8 @@
 title: "Linux shell experience on Windows: Cygwin, Oh My Zsh and Windows Terminal"
 date: 2020-06-16
 summary: Here's what to do to get a decent terminal experience going on Windows
-tags: ['linux', 'windows']
+image: ./goal.png
+tags: ['linux', 'windows', 'workflow']
 ---
 <div class="alert alert-info">
   <h3>Parts of this article are now outdated</h3>
