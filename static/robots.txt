@@ -1,2 +1,4 @@
+Sitemap: https://georgev.design/sitemap.xml
+
 User-agent:*
 Disallow:
