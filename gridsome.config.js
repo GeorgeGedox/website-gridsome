@@ -5,6 +5,7 @@ module.exports = {
   siteName: 'GeorgeV',
   siteDescription: 'A place where I can share my thoughts and discoveries.',
   titleTemplate: '%s | GeorgeV',
+  siteUrl: process.env.GRIDSOME_APP_URL,
   metadata: {
     secureEmail: "e48c8da483818b96838192ca8081978d838a",
     social: {
@@ -28,6 +29,18 @@ module.exports = {
           tags: {
             typeName: 'Tag',
             create: true
+          }
+        }
+      }
+    },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        cacheTime: 600000,
+        config: {
+          '/*': {
+            changefreq: 'weekly',
+            priority: 0.5
           }
         }
       }
