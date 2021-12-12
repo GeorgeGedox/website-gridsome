@@ -1,6 +1,6 @@
 ---
 title: "Intro to self-hosting. How to get started hosting your applications"
-date: 2021-12-10
+date: 2021-12-12
 summary: You want to get into self-hosting but don't know what that involves? This is the perfect place to start.
 image: ./featured.jpg
 tags: ['linux', 'selfhosted', 'hardware', 'software']
