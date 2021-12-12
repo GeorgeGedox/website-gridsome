@@ -81,6 +81,12 @@
     }
   }
 
+  code {
+    background-color: lighten($color-background, 5%);
+    padding: 2px 5px;
+    color: #c877a6;
+  }
+
   .heading {
     > span {
       font-size: 14px;
@@ -91,9 +97,38 @@
     }
   }
 
+  h3 {
+    color: $color-text-body
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &[id]{
+      position: relative;
+    }
+
+    &:hover {
+      a > span.heading-anchor {
+        display: block;
+
+        @include media-breakpoint-down(sm) {
+          display: none;
+        }
+      }
+    }
+  }
+
   .heading-anchor {
+    position: absolute;
     transition: 100ms;
-    margin-right: 5px;
+    padding-right: 10px;
+    left: -30px;
+    top: 55%;
+    display: none
   }
 }
 

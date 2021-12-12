@@ -26,7 +26,6 @@ So I decided to try something else in order to keep my ability to run VMs with V
 ![end result](./goal.png)
 
 What I wanted to achieve with this setup:
-`
 - ✅ No Hyper-V or WSL needed so it doesn't intervene with Vagrant and VirtualBox
 - ✅ Has the ability to install and run a large amount of tools (ansible, node, wget, python, curl, etc)
 - ✅ Is highly customizable both in terms of appearance and functionality (tabs, window splitting, shortcuts, plugins, etc)
