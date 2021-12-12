@@ -22,8 +22,8 @@ export default function (Vue, { router, head, isClient }) {
       id: process.env.GRIDSOME_MICROAN_ID,
       async: true,
       defer: true,
-      dataDnt: false,
-      dataHost: "https://microanalytics.io"
+      "data-dnt": false,
+      "data-host": "https://microanalytics.io"
     })
   }
 }
