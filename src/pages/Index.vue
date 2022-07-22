@@ -6,13 +6,17 @@
           <div class="jumbo-logo">
             <g-image alt="Large Logo" src="/images/logo.png" />
           </div>
-          <p class="intro">Hey there! I’m <strong>George</strong>.</p>
+          <p class="intro">Hey there! I’m <strong class="color-red">George</strong>.</p>
           <p>
-            I’m a Full-Stack Web Developer, Web Designer and DevOps Engineer. Feel free to check out my <g-link to="/blog">blog</g-link> or the
-            <g-link to="/stack">stack</g-link> page to see what I'm currently using. Most of my code can be found on GitHub, including the code for this website.
+            I like messing around with nearly anything that's tech related, I've done a bunch of things ranging from programming in Visual Basic to creating 3D models, developing my
+            own games and managing Kubernetes clusters.
+          </p>
+          <p>
+            Feel free to check out my <g-link to="/blog">blog</g-link> or the <g-link to="/stack">stack</g-link> page to see what I'm currently using. Most of my code can be found
+            on GitHub, including the code for this website.
           </p>
           <p class="mb-5">
-            Currently, I work at <a href="https://ro.deloittedigital.com/" target="_blank">Deloitte Digital</a> as a DevOps Engineer. My previous work history can be found on my
+            Currently, I work at <a href="https://ro.deloittedigital.com/" target="_blank">Deloitte Digital</a> as a Senior DevOps Engineer. My previous work history can be found on my
             LinkedIn profile.
           </p>
           <ul class="social">

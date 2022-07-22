@@ -10,9 +10,12 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-7">
-          <div class="articles">
-            <article class="mb-3" v-for="article in $page.articles.edges" :key="article.id">
+        <div class="col-12">
+          <div class="row articles">
+            <article class="col-12 col-md-4 mb-3" v-for="article in $page.articles.edges.slice(0, 20)" :key="article.id">
+              <div class="image">
+                <g-image :alt="article.node.title" :src="article.node.image"/>
+              </div>
               <div class="title">
                 <span><time>{{ article.node.date }}</time></span>
                 <h2><g-link :to="article.node.path">{{ article.node.title }}</g-link></h2>
@@ -21,7 +24,6 @@
                 <p>{{ article.node.summary }}</p>
                 <g-link :to="article.node.path" class="button">Read more</g-link>
               </div>
-              <div class="divider"><ArticleSeparatorSVG/></div>
             </article>
           </div>
           <div class="pagination">
@@ -63,6 +65,7 @@ query Articles ($page: Int) {
         date (format: "MMMM D, Y")
         summary
         path
+        image (width: 1200, quality: 85)
       }
     }
   }
