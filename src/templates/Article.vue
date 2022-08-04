@@ -123,7 +123,7 @@ export default {
           json: {
             '@context': 'http://schema.org',
             '@type': 'BlogPosting',
-            description: this.$page.article.description,
+            description: this.$page.article.summary,
             datePublished: this.$page.article.date,
             headline: this.$page.article.title,
             image: imagePath

@@ -17,7 +17,7 @@
                 <g-image :alt="article.node.title" :src="article.node.image"/>
               </div>
               <div class="title">
-                <span><time>{{ article.node.date }}</time></span>
+                <span><time>{{ article.node.date }}</time> - {{ article.node.timeToRead }} minute read</span>
                 <h2><g-link :to="article.node.path">{{ article.node.title }}</g-link></h2>
               </div>
               <div class="body">
@@ -66,6 +66,7 @@ query Articles ($page: Int) {
         summary
         path
         image (width: 1200, quality: 85)
+        timeToRead
       }
     }
   }
