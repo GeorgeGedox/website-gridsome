@@ -12,7 +12,7 @@ module.exports = {
       github: "GeorgeGedox",
       dribbble: "GeorgeGedox",
       discord: "GeorgeGedox#7782",
-      linkedin: "iamgeorgevi",
+      linkedin: "georgegedox",
       twitter: "IamGeorgeVi"
     }
   },
@@ -54,10 +54,14 @@ module.exports = {
     remark: {
       autolinkClassName: 'bx bx-link-alt heading-anchor',
       externalLinksTarget: '_blank',
-      externalLinksRel: ['noopener', ],
+      externalLinksRel: ['noopener'],
       anchorClassName: 'icon icon-link',
       plugins: [
-        '@gridsome/remark-prismjs'
+        [
+          '@gridsome/remark-prismjs', {
+            showLineNumbers: true
+          }
+        ]
       ]
     }
   },

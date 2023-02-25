@@ -18,9 +18,11 @@
         </div>
       </div>
     </header>
-    <main>
-      <slot></slot>
-    </main>
+    <transition name="fade" appear>
+      <main>
+        <slot></slot>
+      </main>
+    </transition>
     <footer>
       <p>&copy; georgev.design</p>
       <div class="decoration bottom_right d-none d-md-block">
@@ -50,3 +52,13 @@ query {
   }
 }
 </static-query>
+
+<style>
+.fade-enter-active {
+  transition: opacity .5s;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+</style>

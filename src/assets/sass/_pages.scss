@@ -68,7 +68,7 @@
 
 .article-view {
   img {
-    display: inline-block;
+    display: block;
     max-width: 100%;
     width: auto;
   }
@@ -83,8 +83,29 @@
 
   code {
     background-color: lighten($color-background, 5%);
-    padding: 2px 5px;
+    padding: 2px 0;
     color: #c877a6;
+  }
+
+  blockquote {
+    background: lighten($color-background, 5%);
+    border-left: 10px solid $color-primary;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+
+  blockquote:before {
+    color: $color-primary;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+
+  blockquote p {
+    display: inline;
   }
 
   .heading {
@@ -163,6 +184,8 @@
         > img {
           max-width: 100%;
           height: auto;
+          object-fit: cover;
+          max-height: 250px;
         }
       }
 

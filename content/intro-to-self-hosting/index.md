@@ -45,7 +45,7 @@ You'll need hardware, it can be an old computer that you no longer use, your cur
 This next part will cover some of the terms and practices that you should become familiar with over time, maybe you already know some of this stuff or you're a complete beginner, I doesn't matter.
 
 ### Hide your server IP, seriously
-Let's say you want to host a website on your server that you host in your home, this has some some privacy and security implications, you definitely don't want to get hit with a [DDoS](https://en.wikipedia.org/wiki/Denial-of-service_attack) attack or have your location known by everyone.
+Let's say you want to host a website on your server that you host in your home, this has some serious privacy and security implications, you definitely don't want to get hit with a [DDoS](https://en.wikipedia.org/wiki/Denial-of-service_attack) attack or have your location known by everyone.
 
 Use an edge CDN to put a barier in front of your server, one such service is [Cloudflare](https://cloudflare.com)
 
