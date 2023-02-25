@@ -16,16 +16,4 @@ export default function (Vue, { router, head, isClient }) {
     })
     next()
   })
-
-  // Microanalytics code
-  if (process.env.GRIDSOME_MICROAN_ID) {
-    head.script.push({
-      src: "https://microanalytics.io/js/script.js",
-      id: process.env.GRIDSOME_MICROAN_ID,
-      async: true,
-      defer: true,
-      "data-dnt": false,
-      "data-host": "https://microanalytics.io"
-    })
-  }
 }
