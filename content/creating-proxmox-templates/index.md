@@ -75,7 +75,7 @@ This is it, now if you go back to the Proxmox web interface you should see this:
 ![proxmox interface](./proxmox_template.png)
 This means that you now have a template.
 
-Right click on it, click on `Clone` and set the `Mode` to `Full Clone` and then fill out the remaining inputs. You will get a new VM from that clone.
+Right click on it, click on `Clone` and set the `Mode` to `Full Clone` and then fill out the remaining inputs. You will get a new VM created from that template.
 
-To use cloud-init, click on the clone you made, go to `Cloud-Init` tab and customize your settings and click on **`Regenerate Image`** and that's it!
+To use cloud-init, click on the new VM you made, go to `Cloud-Init` tab and customize your settings and click on **`Regenerate Image`** and that's it!
 Start your new cloned VM and after waiting for the boot sequence to finish you should get directly to a login prompt. Enjoy!
