@@ -25,6 +25,7 @@
     </transition>
     <footer>
       <p>&copy; georgev.design</p>
+      <small>This website does not use any cookies for tracking. <a href="https://github.com/GeorgeGedox/website-gridsome" target="_blank">View source code</a></small>
       <div class="decoration bottom_right d-none d-md-block">
         <DecorationSVG />
       </div>
