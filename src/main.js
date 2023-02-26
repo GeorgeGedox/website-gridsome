@@ -16,4 +16,14 @@ export default function (Vue, { router, head, isClient }) {
     })
     next()
   })
+
+  // Umami tracking code
+  if (process.env.GRIDSOME_UMAMI_ID) {
+    head.script.push({
+      src: process.env.GRIDSOME_UMAMI_SCRIPT_URL,
+      async: true,
+      defer: true,
+      "data-website-id": process.env.GRIDSOME_UMAMI_ID,
+    })
+  }
 }
