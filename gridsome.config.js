@@ -52,6 +52,7 @@ module.exports = {
       use: 'gridsome-plugin-rss',
       options: {
         contentTypeName: 'Article',
+        latest: true,
         feedOptions: {
           title: siteName + ' Blog RSS Feed',
           description: siteDescription,
