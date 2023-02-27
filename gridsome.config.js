@@ -61,8 +61,10 @@ module.exports = {
         },
         feedItemOptions: node => ({
           title: node.title,
+          categories: node.tags,
           description: node.summary,
           url: process.env.GRIDSOME_APP_URL + node.path,
+          date: node.date
         }),
         output: {
           dir: './dist',
