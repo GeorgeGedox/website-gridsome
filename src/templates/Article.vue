@@ -17,6 +17,8 @@
             class="markdown-body article-content"
             v-html="$page.article.content"
           />
+          <!-- Used to embed the giscus comment system -->
+          <div class="giscus"></div>
         </div>
       </div>
     </div>
@@ -128,6 +130,25 @@ export default {
             headline: this.$page.article.title,
             image: imagePath
           }
+        }
+      ],
+      script: [
+        {
+          src: 'https://giscus.app/client.js',
+          'data-repo': "GeorgeGedox/website-gridsome",
+          'data-repo-id': "R_kgDOGfG-qw",
+          'data-category': "Comments",
+          'data-category-id': "DIC_kwDOGfG-q84CUfHC",
+          'data-mapping': "og:title",
+          'data-strict': "1",
+          'data-reactions-enabled': "1",
+          'data-emit-metadata': "0",
+          'data-input-position': "top",
+          'data-theme': "dark_dimmed",
+          'data-lang': "en",
+          'data-loading': "lazy",
+          crossorigin: "anonymous",
+          async: true
         }
       ]
     }

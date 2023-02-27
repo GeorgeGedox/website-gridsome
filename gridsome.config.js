@@ -1,9 +1,12 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const siteName = 'GeorgeV'
+const siteDescription = 'A place where I can share my thoughts and discoveries.'
+
 module.exports = {
-  siteName: 'GeorgeV',
-  siteDescription: 'A place where I can share my thoughts and discoveries.',
+  siteName: siteName,
+  siteDescription: siteDescription,
   titleTemplate: '%s | GeorgeV',
   siteUrl: process.env.GRIDSOME_APP_URL,
   metadata: {
@@ -42,6 +45,27 @@ module.exports = {
             changefreq: 'weekly',
             priority: 0.5
           }
+        }
+      }
+    },
+    {
+      use: 'gridsome-plugin-rss',
+      options: {
+        contentTypeName: 'Article',
+        feedOptions: {
+          title: siteName + ' Blog RSS Feed',
+          description: siteDescription,
+          feed_url: process.env.GRIDSOME_APP_URL + '/rss.xml',
+          site_url: process.env.GRIDSOME_APP_URL
+        },
+        feedItemOptions: node => ({
+          title: node.title,
+          description: node.summary,
+          url: process.env.GRIDSOME_APP_URL + node.path,
+        }),
+        output: {
+          dir: './dist',
+          name: 'rss.xml'
         }
       }
     }
