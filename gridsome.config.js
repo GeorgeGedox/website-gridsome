@@ -14,8 +14,9 @@ module.exports = {
     social: {
       github: "GeorgeGedox",
       dribbble: "GeorgeGedox",
-      discord: "GeorgeGedox#7782",
+      discord: "georgegedox",
       linkedin: "georgegedox",
+      mastodon: "georgegedox",
       twitter: "IamGeorgeVi"
     }
   },

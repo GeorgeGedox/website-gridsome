@@ -32,6 +32,9 @@
             <li class="anim-fadeInLeft anim-delay-300">
               <a :href="`https://www.linkedin.com/in/${$static.metadata.social.linkedin}`" target="_blank" title="LinkedIn"><i class="bx bxl-linkedin"></i> LinkedIn</a>
             </li>
+            <li class="anim-fadeInLeft anim-delay-400">
+              <a :href="`https://mastodon.online/@${$static.metadata.social.mastodon}`" rel="me" target="_blank" title="Mastodon"><i class="bx bxl-mastodon"></i> Mastodon</a>
+            </li>
           </ul>
         </div>
         <div class="col-lg-6 d-none d-lg-block">
@@ -75,6 +78,7 @@ query {
       github
       dribbble
       linkedin
+      mastodon
     }
   }
 }

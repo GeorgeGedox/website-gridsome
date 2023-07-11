@@ -21,7 +21,7 @@
                     <li class="anim-fadeInRight anim-delay-100"><a :href="`https://dribbble.com/${$static.metadata.social.dribbble}`" target="_blank" title="Dribbble"><i class="bx bxl-dribbble"></i> {{ $static.metadata.social.dribbble }}</a></li>
                     <li class="anim-fadeInRight anim-delay-200"><a :href="`https://www.linkedin.com/in/${$static.metadata.social.linkedin}`" target="_blank" title="LinkedIn"><i class="bx bxl-linkedin"></i> {{ $static.metadata.social.linkedin }}</a></li>
                     <li class="anim-fadeInRight anim-delay-300"><a href="https://discord.com" target="_blank" title="Discord"><i class="bx bxl-discord"></i> {{ $static.metadata.social.discord }}</a></li>
-                    <li class="anim-fadeInRight anim-delay-400"><a :href="`https://twitter.com/${$static.metadata.social.twitter}`" target="_blank" title="Twitter"><i class="bx bxl-twitter"></i> @{{ $static.metadata.social.twitter }}</a></li>
+                    <li class="anim-fadeInRight anim-delay-400"><a :href="`https://mastodon.online/@${$static.metadata.social.mastodon}`" target="_blank" title="Mastodon"><i class="bx bxl-mastodon"></i> @{{ $static.metadata.social.mastodon }}</a></li>
                 </ul>
             </div>
         </div>
@@ -53,6 +53,7 @@ query {
       linkedin
       discord
       twitter
+      mastodon
     }
   }
 }
