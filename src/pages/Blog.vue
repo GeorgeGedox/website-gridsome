@@ -14,7 +14,7 @@
           <div class="row articles">
             <article class="col-12 col-md-4 mb-3" v-for="article in $page.articles.edges.slice(0, 20)" :key="article.id">
               <div class="image">
-                <g-image :alt="article.node.title" :src="article.node.image"/>
+                <g-link :to="article.node.path"><g-image :alt="article.node.title" :src="article.node.image"/></g-link>
               </div>
               <div class="title">
                 <span><time>{{ article.node.date }}</time> - {{ article.node.timeToRead }} minute read</span>
